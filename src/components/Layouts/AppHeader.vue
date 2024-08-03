@@ -1,38 +1,35 @@
 <template>
+  <div>
     <div class="top w-100" style="background-color: rgb(0, 0, 61)">
       <!-- <button class="btn btn-success ms-3 btn-sm">call now</button>  -->
 
-      <div class="co">
+      <div class="co d-flex align-items-cente">
         <!-- <div class="d-flex text-white py-2 justify-content-between w-100 px-m-4 px-lg-5 px-2"> -->
-        <div class=" news-ticker">
-        
-          <div class="news-ticker-content">
-            <ul>
-              <li><a href="#">Value Added Tax (VAT) Consultancy</a></li>
+        <div class=" news-ticker d-flex align-items-center py-1 px-2">
+
+          <div class="news-ticker-content w-100 m-0 p-0" style="height: auto;">
+            <ul class="fs-6 d-flex align-items-center m-0 p-0">
+              <li><a class="#" href="#">Value Added Tax (VAT) Consultancy</a></li>
               <li><a href="#"> GST Consultancy</a></li>
               <li><a href="#"> Income Tax Consultancy</a></li>
               <li><a href="#">Professional Tax Consultancy</a></li>
               <li><a href="#">Tax Consultancy Services</a></li>
             </ul>
           </div>
-          <div class="news-ticker-header decoration-none d-flex gap-3 flex-inline">
-            <button class="btn btn-success ms-3 btn-sm text-white"><a href="tel:+918374318214">call now<i class="bi bi-telephone-fill ps-2"></i></a></button>
+        </div>
+        <div class="right d-flex p-1 align-items-center justify-content-around">
+          <a class="btn  btn-sm btn-success" href="tel:+918374318214">call now</a>
+          <div class="news-ticker-header decoration-none d-flex gap-3 flex-inline social-icons">
             <a href="#"><i class="bi bi-facebook fs-5"></i></a>
             <a href="#"><i class="bi bi-instagram fs-5"></i></a>
             <a href="#"><i class="bi bi-twitter fs-5"></i></a>
           </div>
         </div>
-        <div class="right d-flex">
-
-          <!-- <a href="#" title="qs" class="no-mobile text-white text-decoration-none"><i
-              class="fa fa-circle-question active"></i> Have any questions?</a> -->
-          <!-- <button class="btn btn-success ms-3 btn-sm">call now</button> -->
-        </div>
       </div>
     </div>
 
     <!-- navvvv -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  shadow p-3 py-4 sticky-top top-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  shadow p-3 py-4">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -74,6 +71,7 @@
         </div>
       </div>
     </nav>
+  </div>
 
 </template>
 
@@ -90,59 +88,45 @@ export default {
 
 
 <style scoped>
-.top {
-  padding-top: 1.5px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
 
 .co {
-  background-color: rgb(61, 89, 114);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   font-family: 'Poppins', sans-serif;
-  padding-top: 15px;
-
 }
 
 .news-ticker {
-  width: 90%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-}
+  width: 85%;
 
+}
+.right{
+  width: 15%;
+}
 .news-ticker-header {
-  color: beige;
-  height: 100%;
+  color: rgb(73, 202, 71);
+  
   display: flex;
-  align-items: end;
-  justify-content:end;
-  padding-left: 0 12px;
-  width: 500px;
-  font-weight: bold;
-}
-.routlink,.bi{
-    color:white;
-    text-decoration: none !important;
-
 }
 
-.news-ticker-content ul {
-  display: flex;
-  white-space: nowrap;
-  list-style: none;
-  animation: ticker 20s linear infinite;
-  font-weight: bold;
+.routlink,
+.bi {
+  color: white;
+  text-decoration: none !important;
+
 }
 
 .news-ticker-content {
   overflow: hidden;
+  /* white-space: nowrap; */
+ 
 }
+
+.news-ticker-content ul {
+  /* display: flex; */
+  white-space: nowrap;
+  list-style: none;
+  animation: ticker 10s linear infinite;
+}
+
+
 
 .news-ticker-content ul li ::after {
   content: "|";
@@ -161,12 +145,13 @@ export default {
 
 /*** Ticker Animation***/
 @keyframes ticker {
+  
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(100%);
   }
 
   100% {
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-100%);
   }
 
 }
@@ -190,18 +175,30 @@ export default {
   .nav-c {
     padding-left: 12px;
   }
+
 }
 
 @media (max-width: 700px) {
   .no-mobile {
     display: none;
   }
+  .social-icons{
+    display: none !important;
+  }
+
 }
 
 .closeMenuBtn {
   display: none !important;
 }
-
+@media (max-width:1130px) {
+  .news-ticker{
+    width: 75%;
+  }
+  .right{
+    width: 25%;
+  }
+}
 @media (max-width: 992px) {
   .nav-list {
     display: block !important;
