@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="top w-100" style="background-color: rgb(0, 0, 61)">
       <!-- <button class="btn btn-success ms-3 btn-sm">call now</button>  -->
 
@@ -29,7 +28,7 @@
     </div>
 
     <!-- navvvv -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  shadow p-3 py-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  shadow p-3 py-4 sticky-top top-0">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -71,7 +70,6 @@
         </div>
       </div>
     </nav>
-  </div>
 
 </template>
 
