@@ -17,15 +17,10 @@
             </ul>
           </div>
           <div class="news-ticker-header decoration-none d-flex gap-3 flex-inline">
-            <button class="btn btn-success ms-3 btn-sm"><a href="tel:+918374318214">call now</a></button>
+            <button class="btn btn-success ms-3 btn-sm text-white"><a href="tel:+918374318214">call now<i class="bi bi-telephone-fill ps-2"></i></a></button>
             <a href="#"><i class="bi bi-facebook fs-5"></i></a>
             <a href="#"><i class="bi bi-instagram fs-5"></i></a>
             <a href="#"><i class="bi bi-twitter fs-5"></i></a>
-
-            <!-- <a href="#" class="text-white text-decoration-none" title="phone"><i class="bi bi-telephone-fill"></i> Call
-              us: +91 9705200099</a>
-            <a href="#" title="email" class="no-mobile text-white text-decoration-none gap-2"><i
-                class="bi bi-envelope-fill"> </i>Email:support24-7@gmail.com</a>-->
           </div>
         </div>
         <div class="right d-flex">
@@ -38,7 +33,7 @@
     </div>
 
     <!-- navvvv -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  shadow p-3 py-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4 sticky-top">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -99,14 +94,13 @@ export default {
 <style scoped>
 .top {
   padding-top: 1.5px;
-  padding-bottom: 10px;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 
 .co {
-  /* background-color: rgb(61, 89, 114); */
+  background-color: rgb(61, 89, 114);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,8 +115,7 @@ export default {
   height: 30px;
   display: flex;
   align-items: center;
-  padding-right: 20pxpx;
-  margin-right: 120px;
+  padding-right: 20px;
 }
 
 .news-ticker-header {
@@ -135,7 +128,7 @@ export default {
   width: 500px;
   font-weight: bold;
 }
-.routlink,.bi {
+.routlink,.bi{
     color:white;
     text-decoration: none !important;
 
@@ -145,7 +138,7 @@ export default {
   display: flex;
   white-space: nowrap;
   list-style: none;
-  animation: ticker 25s infinite;
+  animation: ticker 20s linear infinite;
   font-weight: bold;
 }
 
@@ -170,12 +163,12 @@ export default {
 
 /*** Ticker Animation***/
 @keyframes ticker {
-  from {
-    transform: translateX(100%);
+  0% {
+    transform: translate3d(0, 0, 0);
   }
 
-  to {
-    transform: translateX(-250%);
+  100% {
+    transform: translate3d(-100%, 0, 0);
   }
 
 }
