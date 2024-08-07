@@ -16,13 +16,15 @@
     <!--sec-1-->
     <section class=" about-sec2 my-5">
         <div class="container">
-            <div class="row gap-5">
-                <div class="about-img-1 col-sm info-box py-2 d-inline rounded-3" >
-                    <img src="../../assets/images/about.svg" style="height:auto;width:500px;" >
+            <div class="row">
+                <div class=" col-lg-6 info-box  d-flex align-items-center justify-content-center gap-5">
+                        <img src="../../assets/images/about -us.jpg" style=" height: auto;  width: 100%;">
                 </div>
+                 
+               
 
-                <div class="col-lg-6">
-                    <div class=" px-3 ">
+                 <div class="col-lg-6">
+                    <div>
                         <h6 class=" text-success py-2">ABOUT US</h6>
                         <h2 class=" mb-4 mt-1 ">Industries that we served nationwide</h2>
                         <p class=" mb-3 ">Jaasritha Corporate Solutions is a full-service consultancy 
@@ -38,9 +40,6 @@
                                 <p><i class="fa-regular fa-circle-check"></i> Corporation Tax Consultant</p>
                                 <p><i class="fa-regular fa-circle-check"></i> Professional Services</p>
                                 <p><i class="fa-regular fa-circle-check"></i> Individuals Tax Consultant</p>
-                                
-
-
                             </div>
                             <div class="col-sm">
                                 <p><i class="fa-regular fa-circle-check"></i> Marketing Agencies</p>
@@ -55,9 +54,9 @@
                         <!-- <a href="#" class="btn btn-success">More About <i
                                 class="fa-solid fa-arrow-right ps-2 text-white"></i></a> -->
                     </div>
-                </div>
+                </div> 
             </div>
-        </div>jm
+        </div>
     </section>
     <!--sec-2-->
     <section class="about-sec3 my-3">
@@ -241,13 +240,9 @@ export default {
     }
     .sec4-card p{
         font-size: 15px;
-    }
-    @media (min-width: 768px){
-    .percent{
-        padding-left: 330px;
+
     }
 
-}
 
 
 </style>
