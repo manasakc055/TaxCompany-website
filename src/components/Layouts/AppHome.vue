@@ -120,7 +120,8 @@
                     <div class=" col-lg-4 info-box  py-2">
                         <div class="card shadow-sm border-none " style="width: 100%; height:100%;" >
 
-                            <div class="card-body mb-2 bg-body rounded d-inline align-items-center justify-content-around gap-3">
+                            <div
+                                class="card-body mb-2 bg-body rounded d-inline align-items-center justify-content-around gap-3">
                                 <img src="../icons/valuation.png" style="height: 50px;width:auto;">
                                 <div class="py-2">
                                     <h5 class="card-title"><a href="#">Valuations</a></h5>
@@ -310,6 +311,33 @@ export default {
 
 <style scoped>
 @media (max-width: 992px) {
+    .nav-list {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        /*left: -100% !important;*/
+        /*transform: translateX(50%) !important;*/
+        background-color: white;
+        padding: 20px;
+        height: 100vh;
+        width: 90vw;
+
+    }
+
+    .nav-c {
+        justify-content: space-between !important;
+    }
+
+    .menu-btn {
+        display: block !important;
+    }
+
+    .closeMenuBtn {
+        display: block !important;
+    }
+
     .home-sec4 {
         background-position: bottom;
     }
