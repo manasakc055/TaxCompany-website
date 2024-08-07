@@ -242,6 +242,12 @@ export default {
         font-size: 15px;
 
     }
+    @media (max-width: 662px) {
+    .about-sec3 .bi{
+        font-size:50px;
+    }
+
+}
 
 
 

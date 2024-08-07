@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="top w-100" style="background-color: rgb(0, 0, 61)">
+    <div class="top w-100" style="background-color: rgb(0, 0, 61); ">
       <!-- <button class="btn btn-success ms-3 btn-sm">call now</button>  -->
 
-      <div class="co d-flex align-items-cente">
+      <div class="ticker-container d-flex align-items-cente">
         <!-- <div class="d-flex text-white py-2 justify-content-between w-100 px-m-4 px-lg-5 px-2"> -->
         <div class=" news-ticker d-flex align-items-center py-1 px-2">
 
@@ -28,59 +28,8 @@
       </div>
     </div>
 
-    <!-- navvvv -->
-    <!-- <nav class="navbar navbar-expand-lg  navbar-light bg-light  shadow p-3 py-4">
-      <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
-        <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          @click="visible = !visible" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse  navbar-collapse " :class="!visible ? 'collapse' : ''" id="navbarSupportedContent">
-
-          <div class="">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <RouterLink to="/" class="nav-link " @click="visible = !visible" aria-current="page">Home</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/about" @click="visible = !visible">About</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/service" @click="visible = !visible">Service</RouterLink>
-              </li>
-              <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
-                  aria-expanded="false">Tax information
-                </RouterLink>
-                <ul class="dropdown-menu">
-                  <li>
-                    <RouterLink class="dropdown-item" to="/Sub" @click="visible = !visible">Subservice</RouterLink>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/contact" @click="visible = !visible">Contact</RouterLink>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav> -->
-   
-
- 
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4 " style="position:sticky; top:50px;">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -186,7 +135,7 @@ export default {
 
 
 <style scoped>
-.co {
+.ticker-container {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -255,28 +204,6 @@ export default {
 
 }
 
-.nav-list {
-  list-style: none;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all ease-in-out 500ms;
-}
-
-.nav-list {
-  color: black;
-}
-
-.nav-list .nav-link:hover {
-  color: #18ba60;
-}
-
-@media (max-width: 600px) {
-  .nav-c {
-    padding-left: 12px;
-  }
-
-}
-
 @media (max-width: 700px) {
   .no-mobile {
     display: none;
@@ -302,6 +229,7 @@ export default {
   }
 }
 
+/*****Call back function image */
 @media (max-width: 992px) {
   .home-sec4 {
     background-position: bottom;
