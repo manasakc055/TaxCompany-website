@@ -27,25 +27,39 @@
                         <p class="mini-h mb-0 ">Service</p>
                         <h2 class="pb-2"> {{ data[id].title }}</h2>
                         <p>{{ data[id].description }}</p>
+                        <div class="sub-heads py-2" v-for="(topic, index) in data[id]['sub-topics']" :key="index">
 
-                       <div class="sub-heads py-2" v-for="items in data[id]['sub-topics']">
-                            <h5>{{ items.title}}</h5>
-                            <p>{{ items.description}}</p>
-                            <ol v-for="items in data[id]['sub-topics']['sublist']">
-                                <li>{{items}}</li>
-                            </ol>
-                            <p>{{items.description-1}}</p>
-                        </div> 
+                            <h5>{{ topic.title }}</h5>
+                            <p>{{ topic.description }}</p>
+
+                            <ul class="bg-success" v-if="topic.sublist">
+                                <li v-for="(item, i) in topic.sublist" :key="i">{{ item }}</li>
+                            </ul>
+                            <p v-if="topic['description-1']">{{ topic['description-1'] }}</p>
+                            <p v-if="topic['description-2']">{{ topic['description-2'] }}</p>
+                            <p v-if="topic['description-3']">{{ topic['description-3'] }}</p>
+                            <p v-if="topic['description-4']">{{ topic['description-4'] }}</p>
+
+                            <div v-if="topic['sub-topics']" v-for="(subTopic, subIndex) in topic['sub-topics']" :key="subIndex">
+                                <h5>{{ subTopic.title }}</h5>
+                                <p>{{ subTopic.description }}</p>
+                                <p v-if="subTopic['small-para']">{{ subTopic['small-para'] }}</p>
+
+                                <div v-if="subTopic['sub-topics']"
+                                    v-for="(nestedTopic, nestedIndex) in subTopic['sub-topics']" :key="nestedIndex">
+                                    <h5>{{ nestedTopic.title }}</h5>
+                                    <p>{{ nestedTopic.description }}</p>
+
+                                    <ul v-if="nestedTopic.sublist">
+                                        <li v-for="(listItem, listIndex) in nestedTopic.sublist" :key="listIndex">
+                                            {{listItem }}</li>
+                                    </ul>
+
+                                    <p v-if="nestedTopic['description-1']">{{ nestedTopic['description-1'] }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!--row 2-->
-                    <!-- <div class="row R2">
-                        <h5> {{ data[id].title }}</h5>
-                        <p>{{ data[id].description }}</p>
-                        <p>{{ data[id].small-para}}</p>
-                     
-                         
-                    </div> -->
-
                 </div>
             </div>
         </div>
@@ -149,7 +163,7 @@ h4 {
     margin-bottom: 40px;
 }
 
-.service-sec2 ul {
+/* .service-sec2 ul {
     padding-left: 5px;
     list-style: none;
 }
@@ -163,7 +177,7 @@ h4 {
     font-weight: 700;
     color: #3a526a;
     text-decoration: underline #18ba60 1px;
-}
+} */
 
 
 /*********form************/
@@ -205,6 +219,9 @@ h4 {
 }
 
 /****Row R2 ****/
+.R1 ul{
+    text-decoration: none;
+}
 
 .R2-list {
     padding-left: 30px;

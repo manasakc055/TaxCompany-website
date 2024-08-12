@@ -1,15 +1,14 @@
 <template>
     <div>
-
-        <!-- about -->
+        <!-- about section -->
         <div class=" home-sec1  min-vh-100 d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class=" col-12">
-                        <h1 class="my-3 ">
+                    <div class=" col-12 ">
+                        <h1 class="my-3 display-5">
                             File with peace of mind,<br> Our experts guide you</h1>
-                        <p>With over 10 years of experience helping
-                            business field<br>comprehensive solution
+                        <p class="lead">With over 10 years of experience helping
+                            business field<br class="d-none d-md-block" />comprehensive solution
                         </p>
                         <RouterLink class="routlink btn btn-success text-white" to="/about">Our Company</RouterLink> 
                         <RouterLink class="routlink btn btn-outline-light ms-3 " to="/contact">Get in Touch</RouterLink>
@@ -120,7 +119,8 @@
                     <div class=" col-lg-4 info-box  py-2">
                         <div class="card shadow-sm border-none " style="width: 100%; height:100%;" >
 
-                            <div class="card-body mb-2 bg-body rounded d-inline align-items-center justify-content-around gap-3">
+                            <div
+                                class="card-body mb-2 bg-body rounded d-inline align-items-center justify-content-around gap-3">
                                 <img src="../icons/valuation.png" style="height: 50px;width:auto;">
                                 <div class="py-2">
                                     <h5 class="card-title"><a href="#">Valuations</a></h5>
@@ -228,16 +228,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class=" news-card col-sm info-box py-2">
-                        <div class="card-body border bg-light ">
-                            <img class="card-img-top" src="../../assets/images/tax.jpg ">
-                            <div class="p-4">
-                                <h5 class="card-title pb-4 pt-2"><a href="#">Tax Realted Queries?</a></h5>
-                                <p class="card-text text-seco">Income Tax Slabs/Rates For FY 2017-18 And Tax Saving
-                                    Under Section 80C Deductions</p>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class=" news-box col-sm py-2">
                         <div class="card-body shadow-none">
                             <div class="row">
@@ -310,6 +300,7 @@ export default {
 
 <style scoped>
 @media (max-width: 992px) {
+
     .home-sec4 {
         background-position: bottom;
     }
@@ -344,7 +335,7 @@ section {
 }
 
 i {
-    color: #18ba60;
+    color: #317447;
 }
 
 .home-sec3 {
@@ -359,16 +350,15 @@ i {
 }
 
 .home-sec3 .row a:hover {
-    color: #18ba60;
+    color: #317447;
 }
-
 
 a {
     text-decoration: none;
 }
 
 a:hover {
-    color: #18ba60;
+    color: #317447;
 }
 
 .home-sec4 {

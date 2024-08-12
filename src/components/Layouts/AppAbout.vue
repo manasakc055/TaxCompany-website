@@ -14,17 +14,15 @@
     </div>
 
     <!--sec-1-->
+  
     <section class=" about-sec2 my-5">
-        <div class="container">
-            <div class="row">
-                <div class=" col-lg-6 info-box  d-flex align-items-center justify-content-center gap-5">
-                        <img src="../../assets/images/about -us.jpg" style=" height: auto;  width: 100%;">
-                </div>
-                 
-               
-
-                 <div class="col-lg-6">
-                    <div>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class=" col-lg-6 info-box gap-5">
+                        <img src="../../assets/images/about.jpg" style="width:100%;height: auto;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" px-3 ">
                         <h6 class=" text-success py-2">ABOUT US</h6>
                         <h2 class=" mb-4 mt-1 ">Industries that we served nationwide</h2>
                         <p class=" mb-3 ">Jaasritha Corporate Solutions is a full-service consultancy 
@@ -40,6 +38,7 @@
                                 <p><i class="fa-regular fa-circle-check"></i> Corporation Tax Consultant</p>
                                 <p><i class="fa-regular fa-circle-check"></i> Professional Services</p>
                                 <p><i class="fa-regular fa-circle-check"></i> Individuals Tax Consultant</p>
+                                
                             </div>
                             <div class="col-sm">
                                 <p><i class="fa-regular fa-circle-check"></i> Marketing Agencies</p>
@@ -54,10 +53,10 @@
                         <!-- <a href="#" class="btn btn-success">More About <i
                                 class="fa-solid fa-arrow-right ps-2 text-white"></i></a> -->
                     </div>
-                </div> 
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!--sec-2-->
     <section class="about-sec3 my-3">
         <div class="container py-5">
@@ -69,22 +68,9 @@
                     </p>
                     <RouterLink class="routlink btn btn-success mb-5" to="/contact">Get in Touch</RouterLink>
 
-                    <!-- <a href="#" class="btn btn-success mb-5">Get a Quote<i
-                            class="fa-solid fa-arrow-right p- text-white"></i></a> -->
                 </div>
                 <div class=" col-lg-6 gap-5">
-                        <!-- <div class="d-flex">
-                            <p >LEGAL BUSSINESS</p>
-                            <p class="percent"  style="padding-left: 300px; color:green; font-weight: bold;">100%</p>
-                            
-                        </div>
-                        <hr class=" rounded-3 bg-success" style="width: 100%; height:10px; ">
-                        <div class="d-flex">
-                            <p>TAX CONSULTANT</p>
-                            <p class="percent"  style="padding-left: 300px; color:green; font-weight: bold;">99%</p>
-                            
-                            <hr class=" rounded-3 bg-success" style="width: 100%; height:10px; ">
-                        </div> -->
+                      
                     <!--row1-->
                         <div class="row align-items-center gap-3">
                             <div class="col-sm-1 pb-4">
@@ -92,7 +78,7 @@
                                 <i class="bi bi-file-earmark-fill fs-1"></i>                            
                             </div>
                             <div class="col-sm mb-3">
-                                <h6> Legal Document</h6>
+                                <h5> Legal Document</h5>
                                 <p> Jaasritha collects, uses, and protects client data.</p>
                             </div>
                         </div>        
@@ -102,7 +88,7 @@
                                 <i class="bi bi-building-fill-up fs-1 "></i>                         
                            </div>
                             <div class="col-sm mb-3">
-                                <h6>Scale up World Branch</h6>
+                                <h5 >Scale up World Branch</h5>
                                 <p>Jaasritha has a dedicated branch specializing in helping businesses scale up.</p>
                             </div>
                         </div>        
@@ -113,7 +99,7 @@
                                 <i class="bi bi-award-fill fs-1"></i>                            
                             </div>
                             <div class="col-sm mb-3">
-                                <h6>Give The Best Service</h6>
+                                <h5>Give The Best Service</h5>
                                 <p> At Jaasritha Corporate Solutions, we're dedicated to providing the best service for your business.</p>
                             </div>
                         </div>        
@@ -124,7 +110,7 @@
                                  <i class="bi bi-chat-quote-fill fs-1"></i>
                             </div>
                              <div class="col-sm mb-3">
-                                <h6>Online Fast Responsive</h6>
+                                <h5>Online Fast Responsive</h5>
                                 <p>  We deliver the best in audit & tax consulting services fast Responsive Expertise.</p>
                             </div>
                         </div>        
@@ -217,7 +203,7 @@ export default {
 
 }
 .bi{
-    color:#18ba60;
+    color:#317447;
 }
 .about-sec1 {
         color: white;
@@ -231,16 +217,22 @@ export default {
     .about-sec3 {
         background-color: #F3F3F3;
     }
+    .about-sec3 h5{
+        font-weight: 600;
+    }
     .sec4-card .card-body{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
     }
     .sec4-card h5 {
-        color: #18ba60;
+        color: #317447;
     }
     .sec4-card p{
         font-size: 15px;
-
+    }
+    @media (min-width: 768px){
+    .percent{
+        padding-left: 330px;
     }
     @media (max-width: 662px) {
     .about-sec3 .bi{
@@ -249,6 +241,7 @@ export default {
 
 }
 
+}
 
 
 </style>

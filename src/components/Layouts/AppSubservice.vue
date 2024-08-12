@@ -955,7 +955,7 @@ h4 {
 }
 
 .service-sec2 h2 {
-    color: #18ba60;
+    color: #317447;
 }
 
 .service-sec2 img {
@@ -994,7 +994,7 @@ h4 {
     cursor: pointer;
     font-weight: 700;
     color: #3a526a;
-    text-decoration: underline #18ba60 1px;
+    text-decoration: underline #317447 1px;
 }
 
 
@@ -1032,7 +1032,7 @@ h4 {
     font-size: 17px;
     font-weight: 600;
     color: white;
-    background-color: #18ba60;
+    background-color: #317447;
     border: transparent;
 }
 /****Row R2 ****/

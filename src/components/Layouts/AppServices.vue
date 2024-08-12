@@ -247,7 +247,7 @@ export default {
   <style scoped>
 
 .heading {
-  background-color: #18ba60;
+  background-color: #317447;
   padding: 10px;
   text-align: center;
   color: white;

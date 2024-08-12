@@ -95,8 +95,8 @@ const indirect_tax = {
                             "description-1": "Once a company pays the MAT, it can carry the payment forward and set-off (adjust) against regular tax payable during the subsequent five-year period subject to certain conditions."
                         },
                         {
-                            "title": "",
-                            "description": "",
+                            "title": "Fringe Benefit Tax:",
+                            "description": "Fringe Benefit Tax, or FBT, was a tax which applied to almost every fringe benefit an employer provided to their employees. In this tax, a number of aspects were covered. Some of them include:",
                             "sublist": [
                                 "Employer’s expense on travel (LTA), employee welfare, accommodation, and entertainment.",
                                 "Any regular commute or commute related expense provided by an employer.",
@@ -117,6 +117,50 @@ const indirect_tax = {
                 }
     
             ]
+        },
+        {
+            "title":"Indirect Tax:",
+            "description":"By definition, indirect taxes are those taxes that are levied on goods or services. They differ from direct taxes because they are not levied on a person who pays them directly to the government, they are instead levied on products and are collected by an intermediary, the person selling the product. The most common examples of indirect tax Indirect tax can be VAT (Value Added Tax), Taxes on Imported Goods, Sales Tax, etc. These taxes are levied by adding them to the price of the service or product which tends to push the cost of the product up.",
+            "sub-title":"Examples of Indirect Taxes:",
+            "small-para":"These are some of the common indirect taxes that you pay.",
+            "sub-topics": [
+                {
+                    "title":"1.Sales Tax:",
+                    "description":"As the name suggests, sales tax is a tax that is levied on the sale of a product. This product can be something that was produced in India or imported and can even cover services rendered. This tax is levied on the seller of the product who then transfers it onto the person who buys said product with the sales tax added to the price of the product. The limitation of this tax is that it can be levied only ones for a particular product, which means that if the product is sold a second time, sales tax cannot be applied to it.",
+                    "description-1":"Basically, all the states in the country follow their own Sales Tax Act and charge a percentage indigenous to themselves. Besides this, a few states also levy other additional charges like turnover tax, purchase tax, works transaction tax, and the like. This is also the reason why sales tax is one of the largest revenue generators for various state governments. Also, this tax is levied under both central and state legislations.",
+
+                },
+                {
+                    "title":"2.Service Tax:",
+                    "description":"Like sales tax is added to the price of goods sold in India, so is service tax added to services provided in India. In the reading of the budget 2015, it was announced that the service tax will be raised from 12.36% to 14%. It is not applicable on goods but on companies that provide services and is collected every month or once every quarter based on how the services are provided. If the establishment is an individual service provider then the service tax is paid only once the customer pays the bills however, for companies the service tax is payable the moment the invoice is raised, irrespective of the customer paying the bill.",
+                    "description-1":"An important thing to remember is that since the service at a restaurant is a combination of the food, the waiter and the premises themselves, it is difficult to pin point what qualifies for service tax. To remove any ambiguity, in this regard, it has been announced that the service tax in restaurants will be levied only on 40% of the total bill.",
+
+                },
+                {
+                    "title":"2a. GST - Goods and Service Tax:",
+                    "description":"The Goods and Services Tax (GST) is the largest reform in India’s indirect tax structure since the market started opening up about 25 years ago. The GST is a consumption-based tax, as it is applicable where consumption takes place. The GST is levied on value-added goods and services at each stage of consumption in the supply chain. The GST payable on the procurement of goods and services can be set off against the GST payable on the supply of goods and services, the merchant will pay the applicable GST rate but can claim it back through the tax credit mechanism.",
+
+                },
+                {
+                    "title":"3.Value Added Tax:",
+                    "description":"VAT, also known as commercial tax is not applicable on commodities that are zero rated (eg. food and essential drugs) or those that fall under exports. This tax is levied at all the stages of the supply chain, right from the manufacturers, dealers and distributors to the end user.",
+                    "description-1":"The value added tax is a tax that is levied at the discretion of the state government and not all states implemented it when it was first announced. The tax is levied on various goods sold in the state and the amount of the tax is decided by the state itself. For example in Gujrat the government split all the good into various categories called schedules. There are 3 schedules and each schedule has its own VAT percentage. For Schedule 3 the VAT is 1%, for schedule 2 the VAT is 5% and so on. Goods that have not been classified into any category have a VAT of 15%.",
+
+                },
+                {
+                    "title":"4.Custom duty & Octroi:",
+                    "description":"When you purchase anything that needs to be imported from another country, a charge is applied on it and that is the customs duty. It applies to all the products that come in via land, sea or air. Even if you bring in products bought in another country to India, a customs duty can be levied on it. The purpose of the customs duty is to ensure that all the goods entering the country are taxed and paid for. Just as customs duty ensures that goods for other countries are taxed, octroi is meant to ensure that goods crossing state borders within India are taxed appropriately. It is levied by the state government and functions in much the same way as customs duty does.",
+
+                },
+                {
+                    "title":"5.Excise Duty:",
+                    "description":"This is a tax that is levied on all the goods manufactured or produced in India. It is different from customs duty because it is applicable only on things produced in India and is also known as the Central Value Added Tax or CENVAT. This tax is collected by the government from the manufacturer of the goods. It can also be collected from those entities that receive manufactured goods and employ people to transport the goods from the manufacturer to themselves.",
+                    "description-1":"The Central Excise Rule set by the central government provide suggest that every person that produces or manufactures any 'excisable goods', or who stores such goods in a warehouse, will have to pay the duty applicable on such goods in. Under this rule no excisable goods, on which any duty is payable, will be allowed to move without payment of duty from any place, where they are produced or manufactured.",
+
+                },
+            ]
+
+
         },
         
         {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top w-100" style="background-color: rgb(0, 0, 61); ">
+    <div class="top w-100 sticky-top" style="background-color: rgb(0, 0, 61); ">
       <!-- <button class="btn btn-success ms-3 btn-sm">call now</button>  -->
 
       <div class="ticker-container d-flex align-items-cente">
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4 " style="position:sticky; top:50px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4 ">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -110,12 +110,8 @@
               </li>
         </ul>
       </div>
-    </div> 
-
-
-
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -149,7 +145,7 @@ export default {
 }
 
 .news-ticker-header {
-  color: rgb(73, 202, 71);
+  color: #317447;
 
   display: flex;
 }

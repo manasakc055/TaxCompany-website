@@ -136,7 +136,7 @@ export default {
     font-size: 17px;
     font-weight: 600;
     color: white;
-    background-color: #18ba60;
+    background-color: #317447;
     border: transparent;
 }
 
@@ -158,9 +158,8 @@ export default {
 
 
 }
-
 .contact-sec2 h2 {
-    color: #18ba60;
+    color: #317447;
 }
 
 .head {

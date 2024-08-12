@@ -6,9 +6,12 @@
             <hr />
             <ul>
                 <li>
-                    <RouterLink to="/sub/:id">What is Tax?</RouterLink>
+                    <RouterLink to="/sub/1">What is Tax?</RouterLink>
                 </li>
-                <li>Direct Tax in India</li>
+                <li>
+                    <RouterLink to="/sub/3">Direct Tax in India</RouterLink>
+                  
+                </li>
                 <li>Difference between Direct and Indirect Taxes</li>
                 <li> Goods and Service Tax(GST)</li>
                 <li> Capital Gains Tax(CGT)</li>
@@ -17,7 +20,7 @@
                 <li> Income Tax for FY 2017-18 |Check Slab Rates,Calculation & News</li>
             </ul>
             <!-- form -->
-
+<!-- 
             <div class="row">
                 <div class="container">
                     <form class="f" href="#">
@@ -34,7 +37,7 @@
                     </form>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </div>
 
